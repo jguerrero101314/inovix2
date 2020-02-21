@@ -1,0 +1,133 @@
+header {
+    background: url("https://firebasestorage.googleapis.com/v0/b/inovix-fc770.appspot.com/o/img%2Fbg.jpg?alt=media&token=7c3d3b9b-e7c1-4e7e-8dd1-4812b687bd79");
+    height: 100vh;
+    /* Asignación alto y ancho de imagen */
+    background-position: top center;
+    /* Centramos la imagen */
+    background-size: cover;
+    /* Escala la imagen para que sea lo mas grande posible */
+    padding: 25vh 0;
+    overflow: hidden;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    image-rendering: crisp-edges;
+    filter: brightness(80%);
+    figure {
+        text-align: center;
+        margin: 30px 0;
+        img {
+            width: 150px;
+            border-radius: 50%;
+            border: 6px solid rgba(255, 255, 255, 0.1);
+            image-rendering: crisp-edges;
+        }
+    }
+}
+
+@media (width: 240px) {
+    .title {
+        font-size: 0.8em;
+    }
+    header {
+        height: 100%;
+        max-height: 100%;
+    }
+    .phrase {
+        font-size: 0.9em;
+        margin-bottom: -40px !important;
+        text-align: center;
+    }
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+    .phrase {
+        font-size: 2.9em;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientatio:landscape) {
+    .phrase {
+        margin-top: -40px!important;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .title {
+        font-size: 3.5em;
+    }
+    .phrase {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .title {
+        font-size: 2.6em;
+    }
+    .phrase {
+        font-size: 1.6em;
+        margin-top: -40px!important;
+    }
+}
+
+@media(min-width: 734px) and (orientation: landscape) {
+    .title {
+        margin-top: -70px;
+    }
+}
+
+@media(min-width: 684px) and (orientation: landscape) {
+    .title {
+        margin-top: -70px;
+    }
+}
+
+@media(min-width: 667px) and (orientation: landscape) {
+    .title {
+        margin-top: -70px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .title {
+        margin-top: -70px;
+    }
+    .phrase {
+        margin-top: -20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .title {
+        font-size: 1.6em;
+    }
+    .phrase {
+        font-size: 1.3em;
+        display: flex;
+        justify-content: center;
+        margin-left: 5px!important;
+        margin-right: 5px!important;
+    }
+}
+
+@media (min-width: 360px) {
+    .phrase {
+        text-align: center;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .title {
+        font-size: 1.1em;
+    }
+    .phrase {
+        font-size: 1.3em;
+        display: flex;
+        justify-content: center;
+        margin-left: 5px!important;
+        margin-right: 5px!important;
+    }
+}

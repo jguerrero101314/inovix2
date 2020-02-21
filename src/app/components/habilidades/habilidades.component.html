@@ -1,0 +1,11 @@
+<div class="habilidades" id="skills">
+    <h2 class="title">Habilidades</h2>
+</div>
+
+<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let img of images">
+        <div class="picsum-img-wrapper">
+            <img src="{{img}}" alt="Random first slide">
+        </div>
+    </ng-template>
+</ngb-carousel>

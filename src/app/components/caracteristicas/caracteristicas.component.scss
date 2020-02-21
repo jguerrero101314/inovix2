@@ -1,0 +1,87 @@
+.characteristics {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .characteristic {
+        width: 20%;
+        padding: 30px;
+        text-align: center;
+        background: rgb(235, 235, 235);
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.1);
+            background: rgb(216, 216, 216);
+        }
+        .title {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            color: #444;
+            margin: 10px 0;
+            font-display: swap;
+        }
+        .description {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: .9em;
+            color: #222;
+            a {
+                color: #222;
+            }
+        }
+    }
+}
+
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .characteristics {
+        .characteristic {
+            margin: auto;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+/*
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .characteristics {
+        .characteristic {
+            margin: auto;
+            width: 60%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .characteristics {
+        .characteristic {
+            margin: auto;
+            width: 60%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .characteristics {
+        margin-bottom: 150px;
+        .characteristic {
+            width: 90%;
+        }
+    }
+}

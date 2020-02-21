@@ -1,0 +1,142 @@
+main {
+    width: 100%;
+    margin-top: 200px;
+    .about-me {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        background: rgb(242, 242, 242);
+        padding: 40px 0;
+        margin-bottom: 300px;
+        article {
+            width: 60%;
+            max-width: 1000px;
+            margin: auto;
+            line-height: 35px; //arreglar
+            margin-bottom: 40px;
+            p {
+                font-weight: 300;
+                font-display: swap;
+            }
+        }
+        .social {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            img {
+                width: 20%;
+                margin: 0px 20px;
+            }
+        }
+        article {
+            .description {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+    .description {
+        font-size: 2em;
+        font-weight: 300!important;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .description {
+        font-size: 2em;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .social {
+        padding-bottom: 420px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .social {
+        padding-bottom: 30px!important;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientatio:landscape) {
+    .social {
+        padding-bottom: 30px!important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        .about-me {
+            .social {
+                width: 90%;
+                justify-content: center;
+                img {
+                    width: 40%;
+                    image-rendering: crisp-edges;
+                }
+            }
+        }
+        section {
+            article {
+                p {
+                    font-size: 1em;
+                }
+            }
+            .social {
+                padding-bottom: 330px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social {
+        padding-bottom: 100px!important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .social {
+        padding-bottom: 10px!important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        margin-top: 150px;
+        .about-me {
+            background: #fff;
+            margin-bottom: 100px;
+            article {
+                width: 90%;
+                font-size: 0.7em;
+                p {
+                    font-size: 1em;
+                    font-display: swap;
+                }
+            }
+            .social {
+                justify-content: center;
+                flex-wrap: wrap;
+                img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .social {
+        padding-bottom: 150px!important;
+    }
+}
